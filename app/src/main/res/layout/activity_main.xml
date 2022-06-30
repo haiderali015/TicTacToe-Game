@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#021170"
+    android:background="#F5000000"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,12 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
-        android:background="#1C38D6"
+        android:height="50dp"
+        android:background="#450C0C"
         android:text="@string/heading"
         android:textColor="#F4ECEC"
         android:textColorLink="#DCD6D6"
         android:textSize="36sp"
         android:textStyle="bold"
+        android:translationY="50sp"
         app:fontFamily="cursive"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -27,18 +29,20 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#2B49EC"
+        android:background="#000000"
         android:contentDescription="@string/grid"
+        android:translationY="120sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/grid" />
+        app:srcCompat="@drawable/grids" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="420dp"
         android:orientation="vertical"
+        android:translationY="110sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
@@ -50,7 +54,7 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:padding="15sp"
-            android:translationY="39sp">
+            android:translationY="29sp">
 
             <ImageView
                 android:id="@+id/imageView0"
@@ -58,7 +62,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="20sp"
-                app:srcCompat="@drawable/o" />
+                app:srcCompat="@drawable/circle" />
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -66,7 +70,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="20sp"
-                app:srcCompat="@drawable/o" />
+                app:srcCompat="@drawable/circle" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -74,39 +78,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="20sp"
-                app:srcCompat="@drawable/o" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:padding="15sp">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/o" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/o" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/o" />
+                app:srcCompat="@drawable/circle" />
         </LinearLayout>
 
         <LinearLayout
@@ -115,8 +87,41 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:padding="15sp"
-            android:translationY="-40sp"
-            app:srcCompat="@drawable/o">
+            android:translationY="10sp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20sp"
+                app:srcCompat="@drawable/circle" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20sp"
+                app:srcCompat="@drawable/circle" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20sp"
+                app:srcCompat="@drawable/circle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="15sp"
+            android:translationY="-10sp"
+            app:srcCompat="@drawable/circle">
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -124,7 +129,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="20sp"
-                app:srcCompat="@drawable/o" />
+                app:srcCompat="@drawable/circle" />
 
             <ImageView
                 android:id="@+id/imageView7"
@@ -132,7 +137,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="20sp"
-                app:srcCompat="@drawable/o" />
+                app:srcCompat="@drawable/circle" />
 
             <ImageView
                 android:id="@+id/imageView8"
@@ -140,7 +145,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="20sp"
-                app:srcCompat="@drawable/o" />
+                app:srcCompat="@drawable/circle" />
         </LinearLayout>
 
     </LinearLayout>
