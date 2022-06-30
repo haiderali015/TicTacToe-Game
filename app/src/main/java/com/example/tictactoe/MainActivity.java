@@ -46,7 +46,15 @@ public class MainActivity extends AppCompatActivity {
                     gamestate[winPosition[0]] != 2 )
             {
                 //somebody has won find who?
+                String winnerstr;
+                if(gamestate[winPosition[0]]==0)
+                {
+                    winnerstr="Player 1 has won";
+                    TextView status = findViewById(R.id.status);
+                    status.setText(winnerstr);
+                }
                 
+
             }
 
         }
