@@ -27,10 +27,11 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 img.setImageResource(R.drawable.circle);
-                activePlayer=1;
+                activePlayer=0;
 
             }
         }
+        img.animate().translationYBy(1000f).setDuration(300);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
