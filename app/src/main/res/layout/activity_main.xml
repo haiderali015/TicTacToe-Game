@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#021170"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,7 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
+        android:background="#1C38D6"
         android:text="@string/heading"
+        android:textColor="#F4ECEC"
+        android:textColorLink="#DCD6D6"
         android:textSize="36sp"
         android:textStyle="bold"
         app:fontFamily="cursive"
@@ -23,6 +27,7 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="#2B49EC"
         android:contentDescription="@string/grid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
