@@ -53,7 +53,12 @@ public class MainActivity extends AppCompatActivity {
                     TextView status = findViewById(R.id.status);
                     status.setText(winnerstr);
                 }
-                
+                else
+                {
+                    winnerstr="Player 2 has won";
+                    TextView status = findViewById(R.id.status);
+                    status.setText(winnerstr);
+                }
 
             }
 
