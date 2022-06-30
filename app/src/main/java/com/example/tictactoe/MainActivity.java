@@ -9,12 +9,17 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int activePlayer=0;
+    boolean gameActive=true;
     int [] gamestate={2,2,2,2,2,2,2,2};
     int winPositions[][]={{0,1,2},{3,4,5},{6,7,8},{0,3,6},{1,4,7},{2,5,8},{0,4,8},{2,4,6}};
     public void onTap(View view)
     {
         ImageView img = (ImageView) view;
         int tappedImage = Integer.parseInt(img.getTag().toString());
+        if(!gameActive)
+        {
+            gameReset(view);
+        }
         if(gamestate[tappedImage]==2)
         {
             gamestate[tappedImage]=activePlayer;
@@ -61,6 +66,26 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             }
+
+        }
+
+        public void gameReset(View view)
+        {
+         gameActive=true;
+         activePlayer=0;
+         int gamestate [] ={2,2,2,2,2,2,2,2};
+            ((ImageView)findViewById(R.id.imageView0)).setImageResource(0);
+            ((ImageView)findViewById(R.id.imageView1)).setImageResource(0);
+            ((ImageView)findViewById(R.id.imageView2)).setImageResource(0);
+            ((ImageView)findViewById(R.id.imageView3)).setImageResource(0);
+            ((ImageView)findViewById(R.id.imageView4)).setImageResource(0);
+            ((ImageView)findViewById(R.id.imageView5)).setImageResource(0);
+            ((ImageView)findViewById(R.id.imageView6)).setImageResource(0);
+            ((ImageView)findViewById(R.id.imageView7)).setImageResource(0);
+            ((ImageView)findViewById(R.id.imageView8)).setImageResource(0);
+
+
+
 
         }
     }
