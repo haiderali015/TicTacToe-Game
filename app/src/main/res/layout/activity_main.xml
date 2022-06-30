@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
         android:height="50dp"
-        android:background="#450C0C"
+        android:background="#000000"
         android:text="@string/heading"
         android:textColor="#F4ECEC"
         android:textColorLink="#DCD6D6"
@@ -61,24 +61,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/circle" />
+                android:padding="20sp" />
 
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/circle" />
+                android:padding="20sp" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/circle" />
+                android:padding="20sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -94,24 +91,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/circle" />
+                android:padding="20sp" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/circle" />
+                android:padding="20sp" />
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/circle" />
+                android:padding="20sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,24 +122,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/circle" />
+                android:padding="20sp" />
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/circle" />
+                android:padding="20sp" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="20sp"
-                app:srcCompat="@drawable/circle" />
+                android:padding="20sp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -161,5 +152,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="A game by Haider Ali"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="139dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
