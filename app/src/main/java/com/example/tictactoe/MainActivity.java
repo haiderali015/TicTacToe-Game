@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int activePlayer=0;
@@ -22,16 +23,33 @@ public class MainActivity extends AppCompatActivity {
             {
                 img.setImageResource(R.drawable.styx);
                 activePlayer=1;
+                TextView status = findViewById(R.id.status);
+                status.setText("2nd players turn - Tap to play");
+
 
             }
             else
             {
                 img.setImageResource(R.drawable.circle);
                 activePlayer=0;
+                TextView status = findViewById(R.id.status);
+                status.setText("1st players turn - Tap to play");
 
             }
+            img.animate().translationYBy(1000f).setDuration(300);
+
         }
-        img.animate().translationYBy(1000f).setDuration(300);
+        for(int [] winPosition: winPositions)
+        {
+            if(gamestate[winPosition[0]]==gamestate[winPosition[1]] &&
+               gamestate[winPosition[1]]==gamestate[winPosition[2]] &&
+                    gamestate[winPosition[0]] != 2 )
+            {
+                //somebody has won find who?
+                
+            }
+
+        }
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
