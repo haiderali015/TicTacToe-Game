@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                     winnerstr="Player 1 has won";
                     TextView status = findViewById(R.id.status);
                     status.setText(winnerstr);
+                    gameActive=false;
                 }
                 else
                 {
