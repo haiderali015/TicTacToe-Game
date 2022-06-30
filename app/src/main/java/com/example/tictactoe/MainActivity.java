@@ -31,12 +31,12 @@ public class MainActivity extends AppCompatActivity {
             gameState[tappedImage] = activePlayer;
             img.setTranslationY(-1000f);
             if (activePlayer == 0) {
-                img.setImageResource(R.drawable.x);
+                img.setImageResource(R.drawable.styx);
                 activePlayer = 1;
                 TextView status = findViewById(R.id.status);
                 status.setText("O's Turn - Tap to play");
             } else {
-                img.setImageResource(R.drawable.o);
+                img.setImageResource(R.drawable.circle);
                 activePlayer = 0;
                 TextView status = findViewById(R.id.status);
                 status.setText("X's Turn - Tap to play");
